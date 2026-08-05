@@ -1,0 +1,90 @@
+.hero {
+  position: relative;
+  padding-top: clamp(4rem, 10vw, 8rem);
+  padding-bottom: clamp(3rem, 8vw, 6rem);
+  overflow: hidden;
+}
+
+.grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--color-rule) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-rule) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.35;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%);
+  pointer-events: none;
+}
+
+.inner {
+  position: relative;
+  max-width: 840px;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 1.5rem;
+}
+
+.headline {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(2.25rem, 6vw, 4rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+}
+
+.accent {
+  font-style: italic;
+  color: var(--color-accent);
+}
+
+.sub {
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  color: var(--color-text-muted);
+  max-width: 560px;
+  margin-bottom: 2.5rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  border-radius: 2px;
+  transition: opacity 0.15s ease, background 0.15s ease;
+}
+
+.primaryBtn {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.primaryBtn:hover {
+  opacity: 0.9;
+}
+
+.secondaryBtn {
+  border: 1px solid var(--color-rule);
+  color: var(--color-text);
+}
+
+.secondaryBtn:hover {
+  border-color: var(--color-accent);
+}

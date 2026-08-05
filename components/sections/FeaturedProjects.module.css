@@ -1,0 +1,19 @@
+.section {
+  padding-top: clamp(3rem, 6vw, 5rem);
+  padding-bottom: clamp(3rem, 6vw, 5rem);
+}
+
+.viewAll {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.viewAllLink {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
