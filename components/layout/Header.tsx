@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import ThemeToggle from '@/components/ui/ThemeToggle';
 import styles from './Header.module.css';
 
 const NAV_LINKS = [
@@ -29,15 +30,18 @@ export default function Header() {
           ))}
         </nav>
 
-        <button
-          className={styles.menuButton}
-          aria-expanded={open}
-          aria-controls="mobile-nav"
-          aria-label={open ? 'Close menu' : 'Open menu'}
-          onClick={() => setOpen((v) => !v)}
-        >
-          <span className={styles.menuIcon} data-open={open} />
-        </button>
+        <div className={styles.controls}>
+          <ThemeToggle />
+          <button
+            className={styles.menuButton}
+            aria-expanded={open}
+            aria-controls="mobile-nav"
+            aria-label={open ? 'Close menu' : 'Open menu'}
+            onClick={() => setOpen((v) => !v)}
+          >
+            <span className={styles.menuIcon} data-open={open} />
+          </button>
+        </div>
       </div>
 
       <nav
