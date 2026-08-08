@@ -1,7 +1,7 @@
 .article {
   padding-top: clamp(2rem, 5vw, 3rem);
-  padding-bottom: clamp(3rem, 6vw, 5rem);
-  max-width: 760px;
+  padding-bottom: clamp(4rem, 8vw, 6rem);
+  max-width: 720px;
 }
 
 .back {
@@ -19,16 +19,38 @@
 }
 
 .header {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
   padding-bottom: 2rem;
   border-bottom: 1px solid var(--color-rule);
 }
 
-.meta {
+.metaRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.status {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-rule);
+  border-radius: 2px;
+  padding: 0.2rem 0.5rem;
+}
+
+.status[data-status='Live'] {
+  color: var(--color-accent);
+  border-color: var(--color-accent-dim);
+}
+
+.metaText {
   font-family: var(--font-mono);
   font-size: 0.8rem;
-  color: var(--color-accent);
-  margin-bottom: 1rem;
+  color: var(--color-text-muted);
 }
 
 .title {
@@ -38,41 +60,45 @@
   margin-bottom: 1rem;
 }
 
-.summary {
+.oneLiner {
   color: var(--color-text-muted);
-  font-size: 1.05rem;
-  max-width: 560px;
-  margin-bottom: 1.75rem;
-}
-
-.links {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.primaryLink,
-.secondaryLink {
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  min-height: 44px;
-  display: flex;
-  align-items: center;
-}
-
-.primaryLink {
-  color: var(--color-accent);
-}
-
-.secondaryLink {
-  color: var(--color-text-muted);
+  font-size: 1.1rem;
+  max-width: 600px;
 }
 
 .body {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.block,
+.decisionBlock {
   font-size: 1rem;
   line-height: 1.75;
-  color: var(--color-text);
-  margin-bottom: 2.5rem;
+}
+
+.decisionBlock {
+  border-left: 2px solid var(--color-accent);
+  padding-left: 1.5rem;
+}
+
+.blockLabel {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-accent);
+  margin-bottom: 0.75rem;
+}
+
+.footer {
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-rule);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .stackLabel {
@@ -94,8 +120,29 @@
 .stackItem {
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  color: var(--color-accent-secondary);
+  color: var(--color-text-muted);
   border: 1px solid var(--color-rule);
   border-radius: 2px;
   padding: 0.35rem 0.65rem;
+}
+
+.linksSection {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.externalLink {
+  font-weight: 500;
+  color: var(--color-accent);
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }

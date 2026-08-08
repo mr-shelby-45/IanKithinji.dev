@@ -6,9 +6,9 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={`container ${styles.inner}`}>
-        <p className={styles.mono}>© {year} Kimathi — Nakuru, Kenya</p>
+        <p className={styles.mono}>© {year} Ian Kithinji — Nakuru, Kenya</p>
         <div className={styles.links}>
-          <a href="mailto:hello@example.com" className={styles.link}>
+          <a href="mailto:iankithinji19@gmail.com" className={styles.link}>
             Email
           </a>
           <a href="https://github.com/mr-shelby-45" className={styles.link} target="_blank" rel="noreferrer">

@@ -1,26 +1,17 @@
 .wrap {
-  display: flex;
-  align-items: baseline;
-  gap: 1rem;
   margin-bottom: 2.5rem;
-}
-
-.index {
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  color: var(--color-accent);
-  white-space: nowrap;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-rule);
 }
 
 .title {
   font-family: var(--font-display);
   font-weight: 500;
   font-size: clamp(1.5rem, 3vw, 2rem);
-  white-space: nowrap;
+  margin-bottom: 0.5rem;
 }
 
-.rule {
-  height: 1px;
-  background: var(--color-rule);
-  width: 100%;
+.lead {
+  color: var(--color-text-muted);
+  max-width: 560px;
 }

@@ -6,9 +6,9 @@ import ThemeToggle from '@/components/ui/ThemeToggle';
 import styles from './Header.module.css';
 
 const NAV_LINKS = [
+  { href: '/#work', label: 'Work' },
+  { href: '/#approach', label: 'Approach' },
   { href: '/#about', label: 'About' },
-  { href: '/#projects', label: 'Projects' },
-  { href: '/#skills', label: 'Skills' },
   { href: '/contact', label: 'Contact' },
 ];
 
@@ -19,7 +19,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={`container ${styles.inner}`}>
         <Link href="/" className={styles.logo} onClick={() => setOpen(false)}>
-          Kimathi<span className={styles.logoAccent}>.</span>
+          Ian Kithinji<span className={styles.logoAccent}>.</span>
         </Link>
 
         <nav className={styles.navDesktop} aria-label="Primary">

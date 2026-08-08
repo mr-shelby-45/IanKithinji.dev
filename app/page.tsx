@@ -1,15 +1,15 @@
 import Hero from '@/components/sections/Hero';
+import Work from '@/components/sections/Work';
+import Approach from '@/components/sections/Approach';
 import About from '@/components/sections/About';
-import Skills from '@/components/sections/Skills';
-import FeaturedProjects from '@/components/sections/FeaturedProjects';
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <Work />
+      <Approach />
       <About />
-      <FeaturedProjects />
-      <Skills />
     </>
   );
 }

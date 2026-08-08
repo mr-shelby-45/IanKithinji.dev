@@ -1,19 +1,44 @@
 import type { Metadata } from 'next';
+import { Source_Serif_4, Inter, JetBrains_Mono } from 'next/font/google';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import './globals.css';
 
+const sourceSerif = Source_Serif_4({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  variable: '--font-display',
+  display: 'swap',
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  variable: '--font-body',
+  display: 'swap',
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  variable: '--font-mono',
+  display: 'swap',
+});
+
 export const metadata: Metadata = {
-  title: 'Kimathi — Developer',
+  title: 'Ian Kithinji',
   description:
-    'Mathematics and Computer Science student building web applications, from NGO platforms to computer-vision systems.',
+    'Software built around real problems, approached with analytical discipline. Mathematics and Computer Science, JKUAT.',
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${sourceSerif.variable} ${inter.variable} ${jetbrainsMono.variable}`}
+    >
       <head>
         <script
           dangerouslySetInnerHTML={{

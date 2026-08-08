@@ -1,17 +1,16 @@
 import styles from './SectionHeading.module.css';
 
 export default function SectionHeading({
-  index,
   title,
+  lead,
 }: {
-  index: string;
   title: string;
+  lead?: string;
 }) {
   return (
     <div className={styles.wrap}>
-      <span className={styles.index}>§{index}</span>
       <h2 className={styles.title}>{title}</h2>
-      <div className={styles.rule} />
+      {lead && <p className={styles.lead}>{lead}</p>}
     </div>
   );
 }
