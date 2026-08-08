@@ -9,8 +9,8 @@ export default function Hero() {
         <h1 className={styles.headline}>
           I build things at the
           <br />
-          intersection of <span className={styles.accent}>proof</span> and{' '}
-          <span className={styles.accent}>product</span>.
+          intersection of <span className={styles.accentGold}>proof</span> and{' '}
+          <span className={styles.accentSage}>product</span>.
         </h1>
         <p className={styles.sub}>
           Final-year Mathematics &amp; Computer Science student at JKUAT.

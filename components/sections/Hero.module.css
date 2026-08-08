@@ -40,9 +40,14 @@
   margin-bottom: 1.5rem;
 }
 
-.accent {
+.accentGold {
   font-style: italic;
   color: var(--color-accent);
+}
+
+.accentSage {
+  font-style: italic;
+  color: var(--color-accent-secondary);
 }
 
 .sub {

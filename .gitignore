@@ -1,11 +1,4 @@
-#Dependencies
-node_modules/
-
-#local environment variables
-
-.env.local
-.env*.local
-
-#Next.js build output
-.next/
-out/
+node_modules
+.next
+*.tsbuildinfo
+.DS_Store

@@ -70,7 +70,7 @@
 .tag {
   font-family: var(--font-mono);
   font-size: 0.7rem;
-  color: var(--color-accent);
+  color: var(--color-accent-secondary);
   border: 1px solid var(--color-rule);
   border-radius: 2px;
   padding: 0.25rem 0.5rem;
