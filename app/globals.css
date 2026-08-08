@@ -1,23 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap');
-
 :root {
-  /* Color tokens — Deep Terracotta & Sage */
-  --color-bg: #181616;
-  --color-bg-raised: #262222;
-  --color-text: #faf7f2;
-  --color-text-muted: #a39b96;
-  --color-accent: #e5a93c;
-  --color-accent-dim: #b3822e;
-  --color-accent-secondary: #8ca077;
-  --color-rule: #332e2d;
-
-  /* Type tokens */
-  --font-display: 'Fraunces', Georgia, serif;
-  --font-body: 'Inter', -apple-system, sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  /* Color tokens */
+  --color-bg: #14110f;
+  --color-bg-raised: #1e1a17;
+  --color-text: #f5f1ea;
+  --color-text-muted: #9c948a;
+  --color-accent: #c1622d;
+  --color-accent-dim: #8f491f;
+  --color-rule: #2a2521;
 
   /* Layout tokens */
-  --content-max: 1280px;
+  --content-max: 1180px;
   --content-padding: 1.5rem;
 }
 
@@ -34,9 +26,8 @@
   --color-bg-raised: #ffffff;
   --color-text: #1e1b1a;
   --color-text-muted: #6b625d;
-  --color-accent: #b8791f;
-  --color-accent-dim: #96611a;
-  --color-accent-secondary: #5f7350;
+  --color-accent: #a3521f;
+  --color-accent-dim: #83421a;
   --color-rule: #e2dad2;
 }
 
@@ -61,7 +52,7 @@ body {
   background: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-body);
-  line-height: 1.6;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
@@ -82,10 +73,8 @@ button { font-family: inherit; }
   padding-right: var(--content-padding);
 }
 
-.mono-label {
+.mono-meta {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--color-accent);
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
 }

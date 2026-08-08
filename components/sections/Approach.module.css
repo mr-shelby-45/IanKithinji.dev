@@ -1,0 +1,22 @@
+.section {
+  padding-top: clamp(3rem, 6vw, 5rem);
+  padding-bottom: clamp(3rem, 6vw, 5rem);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 720px;
+}
+
+.label {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  color: var(--color-text-muted);
+}

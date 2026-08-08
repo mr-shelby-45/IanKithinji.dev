@@ -2,18 +2,28 @@ import SectionHeading from '@/components/ui/SectionHeading';
 import styles from './page.module.css';
 
 export const metadata = {
-  title: 'Contact — Kimathi',
+  title: 'Contact — Ian Kithinji',
 };
 
 export default function ContactPage() {
   return (
     <section className={`container ${styles.section}`}>
-      <SectionHeading index="04" title="Contact" />
+      <SectionHeading title="Contact" />
       <div className={styles.grid}>
-        <p className={styles.lead}>
-          Building something and want a second pair of hands, or just want to
-          talk shop about math and code? Reach out.
-        </p>
+        <div className={styles.intro}>
+          <p className={styles.lead}>
+            Good reasons to get in touch: a software project with a real
+            problem behind it, a technical conversation worth having, or an
+            internship or role where the work above is relevant.
+          </p>
+          <a href="mailto:iankithinji19@gmail.com" className={styles.emailLink}>
+            iankithinji19@gmail.com
+          </a>
+          <p className={styles.note}>
+            Email is the fastest way to reach me. The form below works too,
+            if you&apos;d rather use it.
+          </p>
+        </div>
 
         <form className={styles.form} action="/api/contact" method="POST">
           <div className={styles.field}>
