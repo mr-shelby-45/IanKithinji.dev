@@ -71,12 +71,13 @@ to a dark background.
 - Accent (single): `#C1622D`
 - Rule/border: `#2A2521`
 
-**Typography:** dropped Fraunces (increasingly common "creative developer"
-serif) for Source Serif 4 — still editorial, less immediately recognizable as
-portfolio-template shorthand. Kept Inter for body (a workhorse, not an
-identity signal). JetBrains Mono kept but demoted — used only for metadata
-(dates, links, status), not for section labels or every small piece of UI
-chrome.
+**Typography:** display and body type now match the Mwenda Kimathi
+Foundation site's system — Syne for display/headings, Space Grotesk for body
+text — at Ian's direction, so the two sites Ian built and maintains share a
+consistent type identity rather than each reinventing one. (Earlier version
+of this document used Source Serif 4 + Inter; superseded.) JetBrains Mono
+kept but demoted — used only for metadata (dates, links, status), not for
+section labels or every small piece of UI chrome.
 
 **Removed:** the hero's graph-paper grid background (decorative math
 signaling with no informational purpose — content already establishes the

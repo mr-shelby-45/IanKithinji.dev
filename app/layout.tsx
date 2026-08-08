@@ -1,17 +1,17 @@
 import type { Metadata } from 'next';
-import { Source_Serif_4, Inter, JetBrains_Mono } from 'next/font/google';
+import { Syne, Space_Grotesk, JetBrains_Mono } from 'next/font/google';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import './globals.css';
 
-const sourceSerif = Source_Serif_4({
+const syne = Syne({
   subsets: ['latin'],
-  weight: ['400', '500', '600'],
+  weight: ['500', '600', '700'],
   variable: '--font-display',
   display: 'swap',
 });
 
-const inter = Inter({
+const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
   weight: ['400', '500', '600'],
   variable: '--font-body',
@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${sourceSerif.variable} ${inter.variable} ${jetbrainsMono.variable}`}
+      className={`${syne.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable}`}
     >
       <head>
         <script
